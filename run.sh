@@ -1,16 +1,14 @@
-#!/bin/bash
-GITHUB_USERNAME=gfedacs
-GITHUB_EMAIL=gfedacs@hotmail.com
+##!/bin/bash
+GITHUB_USERNAME=cassiaagomes
+GITHUB_EMAIL=cassia.albuquerque@academico.ifpb.edu.br 
 
-# SERVICE_NAME=order
-SERVICE_NAME=shipping
-RELEASE_VERSION=v1.2.3
+
+RELEASE_VERSION=v1.0.0
 
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest 
 export PATH="$PATH:$(go env GOPATH)/bin"
-# source ~/.zshrc
 
-echo "Generating Go source code"
+echo "Generating Go source code for ${SERVICE_NAME}"
 mkdir -p golang
 protoc --go_out=./golang \
   --go_opt=paths=source_relative \

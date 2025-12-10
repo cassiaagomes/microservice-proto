@@ -1,3 +1,3 @@
-module github.com/gfedacs/microservices-proto/golang/order
+module github.com/cassiaagomes/microservices-proto/golang/order
 
 go 1.24.4
